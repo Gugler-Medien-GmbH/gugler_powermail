@@ -1,0 +1,7 @@
+plugin.tx_powermail {
+  view {
+    partialRootPaths {
+      10 = EXT:gugler_powermail/Resources/Private/Partials/
+    }
+  }
+}
