@@ -1,6 +1,12 @@
 {
   "name": "gugler/gugler-powermail",
   "description": "A11y improvements for powermail extension",
+  "keywords": [
+    "typo3",
+    "powermail",
+    "A11y"
+  ],
+  "homepage": "https://github.com/Gugler-GmbH/",
   "license": "GPL-2.0-or-later",
   "type": "typo3-cms-extension",
   "authors": [
@@ -16,10 +22,6 @@
     "psr-4": {
       "Gugler\\GuglerPowermail\\": "Classes"
     }
-  },
-  "replace": {
-    "typo3-ter/gugler_powermail": "self.version",
-    "gugler_powermail": "self.version"
   },
   "extra": {
     "typo3/cms": {
