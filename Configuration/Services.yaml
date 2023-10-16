@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Gugler\GuglerPowermail\:
+    resource: "../Classes/*"
+
+  In2code\Powermail\Domain\Model\Field::class:
+    class: Gugler\GuglerPowermail\Domain\Model\Field::class

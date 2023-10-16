@@ -1,0 +1,15 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<f:render partial="Form/FieldLabel" arguments="{_all}" />
+
+<div class="{settings.styles.framework.fieldWrappingClasses}">
+  <f:form.textfield
+    type="{vh:validation.fieldTypeFromValidation(field:field)}"
+    property="{field.marker}"
+    placeholder="{field.placeholder}"
+    value="{vh:misc.prefillField(field:field, mail:mail)}"
+    class="col-12 powermail_input form-control {settings.styles.framework.fieldClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')}"
+    additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field, additionalAttributes:'{autocomplete:\'{field.autocomplete}\'}')}"
+    id="powermail_field_{field.marker}"
+  />
+</div>
