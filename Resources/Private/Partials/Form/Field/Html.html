@@ -1,0 +1,10 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<f:if condition="{settings.misc.htmlForHtmlFields}">
+    <f:then>
+      {field.text -> f:format.raw()}
+    </f:then>
+    <f:else>
+      <f:sanitize.html>{field.text -> f:format.raw()}</f:sanitize.html>
+    </f:else>
+</f:if>
