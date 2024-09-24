@@ -1,0 +1,12 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<f:if condition="{field.css} != 'nolabel'">
+    <label
+            class="form-label"
+            for="powermail_field_{field.marker}"
+            title="{field.description}"
+    >
+        <vh:string.escapeLabels>{field.title}</vh:string.escapeLabels>
+        <f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+    </label>
+</f:if>
