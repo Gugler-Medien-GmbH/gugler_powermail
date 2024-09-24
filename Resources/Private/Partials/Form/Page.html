@@ -4,7 +4,7 @@
         <legend class="powermail_legend">{page.title}</legend>
     </f:if>
     <f:for each="{page.fields}" as="field" iteration="iteration">
-        <div class="{field.css} mb-3">
+        <div class="powermail_fieldwrap powermail_fieldwrap_type_input powermail_fieldwrap_{field.marker} {field.css} mb-3">
             <f:render partial="Form/Field/{vh:String.Upper(string:field.type)}" arguments="{field:field}"/>
             <f:if condition="{field.description}">
                 <div class="form-text" id="field_description_{field.uid}">{field.description}</div>
