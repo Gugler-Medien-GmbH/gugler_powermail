@@ -21,27 +21,27 @@
             </trans-unit>
             <trans-unit id="autocomplete.given-name">
                 <source>Given name</source>
-                <target>Vorname</target
+                <target>Vorname</target>
             </trans-unit>
             <trans-unit id="autocomplete.family-name">
                 <source>Family name</source>
-                <target>Nachname</target
+                <target>Nachname</target>
             </trans-unit>
             <trans-unit id="autocomplete.email">
                 <source>Email</source>
-                <target>E-Mail</target
+                <target>E-Mail</target>
             </trans-unit>
             <trans-unit id="autocomplete.tel">
                 <source>Phone number</source>
-                <target>Telefonnummer</target
+                <target>Telefonnummer</target>
             </trans-unit>
             <trans-unit id="autocomplete.address-line1">
                 <source>Street</source>
-                <target>Straße</target
+                <target>Straße</target>
             </trans-unit>
             <trans-unit id="autocomplete.country-name">
                 <source>Country</source>
-                <target>Land</target
+                <target>Land</target>
             </trans-unit>
             <trans-unit id="autocomplete.postal-code">
                 <source>Post code (only possible if no validation by number!)</source>
@@ -49,19 +49,19 @@
             </trans-unit>
             <trans-unit id="autocomplete.sex">
                 <source>Sex</source>
-                <target>Geschlecht</target
+                <target>Geschlecht</target>
             </trans-unit>
             <trans-unit id="autocomplete.additional-name">
                 <source>Additional name</source>
-                <target>Zweiter Name</target
+                <target>Zweiter Name</target>
             </trans-unit>
             <trans-unit id="autocomplete.honorific-prefix">
                 <source>Honorific prefix</source>
-                <target>Titel vorangestellt</target
+                <target>Titel vorangestellt</target>
             </trans-unit>
             <trans-unit id="autocomplete.honorific-suffix">
                 <source>Honorific suffix</source>
-                <target>Titel nachgestellt</target
+                <target>Titel nachgestellt</target>
             </trans-unit>
             <trans-unit id="autocomplete.language">
                 <source>Language</source>
@@ -69,31 +69,31 @@
             </trans-unit>
             <trans-unit id="autocomplete.bday">
                 <source>Birthday</source>
-                <target>Geburtsdatum</target
+                <target>Geburtsdatum</target>
             </trans-unit>
             <trans-unit id="autocomplete.bday-day">
                 <source>Day of birthday</source>
-                <target>Tag des Geburtsdatum</target
+                <target>Tag des Geburtsdatum</target>
             </trans-unit>
             <trans-unit id="autocomplete.bday-month">
                 <source>Month of birthday</source>
-                <target>Monat des Geburtsdatum</target
+                <target>Monat des Geburtsdatum</target>
             </trans-unit>
             <trans-unit id="autocomplete.bday-year">
                 <source>Year of birthday</source>
-                <target>Jahr des Geburtsdatum</target
+                <target>Jahr des Geburtsdatum</target>
             </trans-unit>
             <trans-unit id="autocomplete.organization">
                 <source>Organization</source>
-                <target>Organisation</target
+                <target>Organisation</target>
             </trans-unit>
             <trans-unit id="autocomplete.organization-title">
                 <source>Organization title</source>
-                <target>Organisationsname</target
+                <target>Organisationsname</target>
             </trans-unit>
             <trans-unit id="autocomplete.url">
                 <source>Url</source>
-                <target>Url</target
+                <target>Url</target>
             </trans-unit>
 		</body>
     </file>
