@@ -3,6 +3,12 @@
 	<file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
 		<header/>
 		<body>
+            <trans-unit id="powermail.tab.accessibility">
+                <source>Accessibility</source>
+            </trans-unit>
+            <trans-unit id="autocomplete">
+                <source>Autocomplete attribute</source>
+            </trans-unit>
 		    <trans-unit id="autocomplete.none">
                 <source>No autocomplete attribute</source>
             </trans-unit>

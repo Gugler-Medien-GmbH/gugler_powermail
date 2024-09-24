@@ -6,7 +6,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 $tempColumns = [
     'autocomplete' => [
         'exclude' => 0,
-        'label'   => 'Autocomplete Wert',
+        'label'   => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete',
         'config'  => [
             'type' => 'select',
             'renderType' => 'selectSingle',
@@ -111,7 +111,7 @@ $tempColumns = [
 ExtensionManagementUtility::addTCAcolumns('tx_powermail_domain_model_field', $tempColumns);
 ExtensionManagementUtility::addToAllTCAtypes(
     'tx_powermail_domain_model_field',
-    '--div--;Barrierefreiheit, autocomplete',
+    '--div--;LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:powermail.tab.accessibility, autocomplete',
     '',
     'after:own_marker_select'
 );

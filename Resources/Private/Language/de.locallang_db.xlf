@@ -2,6 +2,14 @@
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
         <body>
+            <trans-unit id="powermail.tab.accessibility">
+                <source>Accessibility</source>
+                <target>Barrierefreiheit</target>
+            </trans-unit>
+            <trans-unit id="autocomplete">
+                <source>Autocomplete attribute</source>
+                <target>Autocomplete Attribut</target>
+            </trans-unit>
             <trans-unit id="autocomplete.none">
                 <source>No autocomplete attribute</source>
                 <target>Kein Autocomplete Attribut</target>
