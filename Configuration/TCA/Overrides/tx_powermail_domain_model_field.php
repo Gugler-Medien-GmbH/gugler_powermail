@@ -1,45 +1,115 @@
 <?php
 defined('TYPO3') or die();
 
-
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $tempColumns = [
     'autocomplete' => [
         'exclude' => 0,
-        'label' => 'Autocomplete Wert',
-        'config' => [
+        'label'   => 'Autocomplete Wert',
+        'config'  => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                ['label' => 'Kein autocomplete Attribut', 'value' => 'none'],
-                ['label' => 'On', 'value' => 'on'],
-                ['label' => 'Off', 'value' => 'off'],
-                ['label' => 'Ganzer Name', 'value' => 'name'],
-                ['label' => 'Vorname', 'value' => 'given-name'],
-                ['label' => 'Nachname', 'value' => 'family-name'],
-                ['label' => 'E-Mail', 'value' => 'email'],
-                ['label' => 'Telefonnummer', 'value' => 'tel'],
-                ['label' => 'Straße', 'value' => 'address-line1'],
-                ['label' => 'Land', 'value' => 'country-name'],
-                ['label' => 'PLZ (nur möglich, wenn keine Validierung nach Nummern)', 'value' => 'postal-code'],
-                ['label' => 'Geschlecht', 'value' => 'sex'],
-                ['label' => 'Zweiter Name', 'value' => 'additional-name'],
-                ['label' => 'Titel vorangestellt', 'value' => 'honorific-prefix'],
-                ['label' => 'Titel nachgestellt', 'value' => 'honorific-suffix'],
-                ['label' => 'Sprache', 'value' => 'language'],
-                ['label' => 'Geburtstag', 'value' => 'bday'],
-                ['label' => 'Tag des Geburtsdatum', 'value' => 'bday-day'],
-                ['label' => 'Monat des Geburtsdatum', 'value' => 'bday-month'],
-                ['label' => 'Jahr des Geburtsdatum', 'value' => 'bday-year'],
-                ['label' => 'Unternehmen/Organisation', 'value' => 'organization'],
-                ['label' => 'Position (Job Titel)', 'value' => 'organization-title'],
-                ['label' => 'Website (URL)', 'value' => 'url']
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.none',
+                    'value' => 'none'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.on',
+                    'value' => 'on'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.off',
+                    'value' => 'off'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.name',
+                    'value' => 'name'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.given-name',
+                    'value' => 'given-name'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.family-name',
+                    'value' => 'family-name'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.email',
+                    'value' => 'email'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.tel',
+                    'value' => 'tel'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.address-line1',
+                    'value' => 'address-line1'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.country-name',
+                    'value' => 'country-name'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.postal-code',
+                    'value' => 'postal-code'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.sex',
+                    'value' => 'sex'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.additional-name',
+                    'value' => 'additional-name'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.honorific-prefix',
+                    'value' => 'honorific-prefix'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.honorific-suffix',
+                    'value' => 'honorific-suffix'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.language',
+                    'value' => 'language'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.bday',
+                    'value' => 'bday'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.bday-day',
+                    'value' => 'bday-day'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.bday-month',
+                    'value' => 'bday-month'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.bday-year',
+                    'value' => 'bday-year'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.organization',
+                    'value' => 'organization'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.organization-title',
+                    'value' => 'organization-title'
+                ],
+                [
+                    'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.url',
+                    'value' => 'url'
+                ]
             ]
         ]
     ]
 ];
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_powermail_domain_model_field', $tempColumns);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+
+ExtensionManagementUtility::addTCAcolumns('tx_powermail_domain_model_field', $tempColumns);
+ExtensionManagementUtility::addToAllTCAtypes(
     'tx_powermail_domain_model_field',
     '--div--;Barrierefreiheit, autocomplete',
     '',

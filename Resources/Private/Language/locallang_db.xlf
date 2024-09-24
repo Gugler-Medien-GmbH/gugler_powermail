@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
+		<header/>
+		<body>
+		    <trans-unit id="autocomplete.none">
+                <source>No autocomplete attribute</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.on">
+                <source>On</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.off">
+                <source>Off</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.name">
+                <source>Full name</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.given-name">
+                <source>Given name</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.family-name">
+                <source>Family name</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.tel">
+                <source>Phone number</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.address-line1">
+                <source>Street</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.country-name">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.postal-code">
+                <source>Post code (only possible if no validation by number!)</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.sex">
+                <source>Sex</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.additional-name">
+                <source>Additional name</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.honorific-prefix">
+                <source>Honorific prefix</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.honorific-suffix">
+                <source>Honorific suffix</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.language">
+                <source>Language</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.bday">
+                <source>Birthday</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-day">
+                <source>Day of birthday</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-month">
+                <source>Month of birthday</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-year">
+                <source>Year of birthday</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.organization">
+                <source>Organization</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.organization-title">
+                <source>Organization title</source>
+            </trans-unit>
+            <trans-unit id="autocomplete.url">
+                <source>Url</source>
+            </trans-unit>
+		</body>
+    </file>
+</xliff>

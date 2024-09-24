@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
+		<header/>
+		<body>
+		    <trans-unit id="autocomplete.none">
+                <source>No autocomplete attribute</source>
+                <target>Kein Autocomplete Attribut</target>
+            </trans-unit>
+            <trans-unit id="autocomplete.on">
+                <source>On</source>
+                <target>An</target>
+            </trans-unit>
+            <trans-unit id="autocomplete.off">
+                <source>Off</source>
+                <target>Aus</target>
+            </trans-unit>
+            <trans-unit id="autocomplete.name">
+                <source>Full name</source>
+                <target>Voller Name</target>
+            </trans-unit>
+            <trans-unit id="autocomplete.given-name">
+                <source>Given name</source>
+                <target>Vorname</target
+            </trans-unit>
+            <trans-unit id="autocomplete.family-name">
+                <source>Family name</source>
+                <target>Nachname</target
+            </trans-unit>
+            <trans-unit id="autocomplete.email">
+                <source>Email</source>
+                <target>E-Mail</target
+            </trans-unit>
+            <trans-unit id="autocomplete.tel">
+                <source>Phone number</source>
+                <target>Telefonnummer</target
+            </trans-unit>
+            <trans-unit id="autocomplete.address-line1">
+                <source>Street</source>
+                <target>Straße</target
+            </trans-unit>
+            <trans-unit id="autocomplete.country-name">
+                <source>Country</source>
+                <target>Land</target
+            </trans-unit>
+            <trans-unit id="autocomplete.postal-code">
+                <source>Post code (only possible if no validation by number!)</source>
+                <target>Postleitzahl (nur möglich, wenn keine Validierung nach Nummern!)</target
+            </trans-unit>
+            <trans-unit id="autocomplete.sex">
+                <source>Sex</source>
+                <target>Geschlecht</target
+            </trans-unit>
+            <trans-unit id="autocomplete.additional-name">
+                <source>Additional name</source>
+                <target>Zweiter Name</target
+            </trans-unit>
+            <trans-unit id="autocomplete.honorific-prefix">
+                <source>Honorific prefix</source>
+                <target>Titel vorangestellt</target
+            </trans-unit>
+            <trans-unit id="autocomplete.honorific-suffix">
+                <source>Honorific suffix</source>
+                <target>Titel nachgestellt</target
+            </trans-unit>
+            <trans-unit id="autocomplete.language">
+                <source>Language</source>
+                <target>Sprache</target>
+            </trans-unit>
+            <trans-unit id="autocomplete.bday">
+                <source>Birthday</source>
+                <target>Geburtsdatum</target
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-day">
+                <source>Day of birthday</source>
+                <target>Tag des Geburtsdatum</target
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-month">
+                <source>Month of birthday</source>
+                <target>Monat des Geburtsdatum</target
+            </trans-unit>
+            <trans-unit id="autocomplete.bday-year">
+                <source>Year of birthday</source>
+                <target>Jahr des Geburtsdatum</target
+            </trans-unit>
+            <trans-unit id="autocomplete.organization">
+                <source>Organization</source>
+                <target>Organisation</target
+            </trans-unit>
+            <trans-unit id="autocomplete.organization-title">
+                <source>Organization title</source>
+                <target>Organisationsname</target
+            </trans-unit>
+            <trans-unit id="autocomplete.url">
+                <source>Url</source>
+                <target>Url</target
+            </trans-unit>
+		</body>
+    </file>
+</xliff>
