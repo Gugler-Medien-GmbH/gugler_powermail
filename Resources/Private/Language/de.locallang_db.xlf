@@ -120,7 +120,7 @@
             </trans-unit>
             <trans-unit id="justify_content.left">
                 <source>Left</source>
-                <target>Links</target
+                <target>Links</target>
             </trans-unit>
             <trans-unit id="justify_content.center">
                 <source>Centered</source>
