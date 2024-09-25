@@ -78,6 +78,12 @@
             <trans-unit id="autocomplete.url">
                 <source>Url</source>
             </trans-unit>
+            <trans-unit id="itemsPerRow">
+                <source>Items per row</source>
+            </trans-unit>
+            <trans-unit id="itemsPerRow.description">
+                <source>How many items a row should contain (controlled via bootstrap 5 classes)</source>
+            </trans-unit>
 		</body>
     </file>
 </xliff>

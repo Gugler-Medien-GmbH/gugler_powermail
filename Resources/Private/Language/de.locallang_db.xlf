@@ -102,6 +102,14 @@
                 <source>Url</source>
                 <target>Url</target>
             </trans-unit>
+            <trans-unit id="itemsPerRow">
+                <source>Items per row</source>
+                <target>Elemente pro Reihe</target>
+            </trans-unit>
+            <trans-unit id="itemsPerRow.description">
+                <source>How many items a row should contain (controlled via bootstrap 5 classes)</source>
+                <target>Wie viele Elemente eine Reihe enthalten soll (gesteuert über Bootstrap 5 Klassen)</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

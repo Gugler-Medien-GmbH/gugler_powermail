@@ -105,6 +105,22 @@ $tempColumns = [
                 ]
             ]
         ]
+    ],
+    "items_per_row" => [
+        "exclude" => 0,
+        "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:itemsPerRow',
+        "description" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:itemsPerRow.description',
+        "config" => [
+            "type" => 'select',
+            "renderType" => 'selectSingle',
+            "items" => [
+                ['--bitte auswählen--', ""],
+                ['2', "col-xs-12 col-sm-6"],
+                ['3', "col-xs-6 col-sm-4"],
+                ['4', "col-xs-6 col-sm-3"],
+                ['6', "col-xs-6 col-sm-2"],
+            ],
+        ]
     ]
 ];
 
@@ -115,3 +131,12 @@ ExtensionManagementUtility::addToAllTCAtypes(
     '',
     'after:own_marker_select'
 );
+
+$GLOBALS['TCA']['tx_powermail_domain_model_field']['palettes']["inlineOptions"] = [
+    'showitem' => 'items_per_row'
+];
+$showItemCheck = $GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['check']['showitem'];
+$showItemRadio = $GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['radio']['showitem'];
+$GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['check']['showitem'] = str_replace("--palette--;Layout;43", "--palette--;Layout;43, --palette--;Inline;inlineOptions", $showItemCheck);
+$GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['radio']['showitem'] = str_replace("--palette--;Layout;43", "--palette--;Layout;43, --palette--;Inline;inlineOptions", $showItemRadio);
+
