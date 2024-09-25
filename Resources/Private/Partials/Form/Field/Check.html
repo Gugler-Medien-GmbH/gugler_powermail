@@ -4,7 +4,7 @@
 
 <f:if condition="{field.itemsPerRow}">
     <f:then>
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap {field.justifyContent}">
             <f:render section="checkbox" arguments="{_all}"/>
         </div>
     </f:then>
@@ -19,7 +19,7 @@
 
 <f:section name="checkbox">
     <f:for each="{field.modifiedSettings}" as="setting" iteration="index">
-        <div class="form-check {field.itemsPerRow} {field.justifyContent} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
+        <div class="form-check {field.itemsPerRow} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
             <f:form.checkbox
                     property="{field.marker}."
                     value="{setting.value}"
