@@ -115,10 +115,10 @@ $tempColumns = [
             "renderType" => 'selectSingle',
             "items" => [
                 ['--bitte auswählen--', ""],
-                ['2', "col-xs-12 col-sm-6"],
-                ['3', "col-xs-6 col-sm-4"],
-                ['4', "col-xs-6 col-sm-3"],
-                ['6', "col-xs-6 col-sm-2"],
+                ['2', "col-12 col-sm-6"],
+                ['3', "col-12 col-sm-4"],
+                ['4', "col-12 col-sm-3"],
+                ['6', "col-12 col-sm-2"],
             ],
         ]
     ]
