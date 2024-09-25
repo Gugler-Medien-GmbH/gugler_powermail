@@ -3,26 +3,24 @@
 
 <f:render partial="Form/FieldLabel" arguments="{_all}"/>
 
-<div class="{settings.styles.framework.fieldWrappingClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
-    <f:if condition="{field.itemsPerRow}">
-        <f:then>
-            <div class="d-flex flex-wrap">
-                <f:render section="radio" arguments="{_all}"/>
-            </div>
-        </f:then>
-        <f:else>
+<f:if condition="{field.itemsPerRow}">
+    <f:then>
+        <div class="d-flex flex-wrap">
             <f:render section="radio" arguments="{_all}"/>
-        </f:else>
-    </f:if>
+        </div>
+    </f:then>
+    <f:else>
+        <f:render section="radio" arguments="{_all}"/>
+    </f:else>
+</f:if>
 
-    <f:if condition="{settings.validation.client}">
-        <div class="powermail_field_error_container powermail_field_error_container_{field.marker}"></div>
-    </f:if>
-</div>
+<f:if condition="{settings.validation.client}">
+    <div class="powermail_field_error_container powermail_field_error_container_{field.marker}"></div>
+</f:if>
 
 <f:section name="radio">
     <f:for each="{field.modifiedSettings}" as="setting" iteration="index">
-        <div class="form-check {field.itemsPerRow} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
+        <div class="form-check {field.itemsPerRow} {field.justifyContent} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
             <f:form.radio
                     property="{field.marker}"
                     value="{setting.value}"

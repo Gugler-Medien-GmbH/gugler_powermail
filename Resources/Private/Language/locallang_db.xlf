@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
 		<header/>
 		<body>
+		    <trans-unit id="select.empty">
+                <source>---Choose option---</source>
+            </trans-unit>
             <trans-unit id="powermail.tab.accessibility">
                 <source>Accessibility</source>
             </trans-unit>
@@ -83,6 +86,27 @@
             </trans-unit>
             <trans-unit id="itemsPerRow.description">
                 <source>How many items a row should contain (controlled via bootstrap 5 classes)</source>
+            </trans-unit>
+            <trans-unit id="justify_content">
+                <source>Justify content</source>
+            </trans-unit>
+            <trans-unit id="justify_content.left">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="justify_content.center">
+                <source>Centered</source>
+            </trans-unit>
+            <trans-unit id="justify_content.right">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="justify_content.space-between">
+                <source>Space between</source>
+            </trans-unit>
+            <trans-unit id="justify_content.space-around">
+                <source>Space around</source>
+            </trans-unit>
+            <trans-unit id="justify_content.space-evenly">
+                <source>Space evenly</source>
             </trans-unit>
 		</body>
     </file>

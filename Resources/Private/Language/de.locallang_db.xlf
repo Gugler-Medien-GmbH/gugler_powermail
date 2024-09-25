@@ -2,6 +2,10 @@
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf">
         <body>
+            <trans-unit id="select.empty">
+                <source>---Choose option---</source>
+                <target>---Option wählen---</target>
+            </trans-unit>
             <trans-unit id="powermail.tab.accessibility">
                 <source>Accessibility</source>
                 <target>Barrierefreiheit</target>
@@ -109,6 +113,34 @@
             <trans-unit id="itemsPerRow.description">
                 <source>How many items a row should contain (controlled via bootstrap 5 classes)</source>
                 <target>Wie viele Elemente eine Reihe enthalten soll (gesteuert über Bootstrap 5 Klassen)</target>
+            </trans-unit>
+            <trans-unit id="justify_content">
+                <source>Justify content</source>
+                <target>Inhalt ausrichten</target>
+            </trans-unit>
+            <trans-unit id="justify_content.left">
+                <source>Left</source>
+                <target>Links</target
+            </trans-unit>
+            <trans-unit id="justify_content.center">
+                <source>Centered</source>
+                <target>Zentriert</target>
+            </trans-unit>
+            <trans-unit id="justify_content.right">
+                <source>Right</source>
+                <target>Rechts</target>
+            </trans-unit>
+            <trans-unit id="justify_content.space-between">
+                <source>Space between</source>
+                <target>Abstand zwischen den Elemente</target>
+            </trans-unit>
+            <trans-unit id="justify_content.space-around">
+                <source>Space around</source>
+                <target>Abstand um die Elemente</target>
+            </trans-unit>
+            <trans-unit id="justify_content.space-evenly">
+                <source>Space evenly</source>
+                <target>Abstand gleichmäßig</target>
             </trans-unit>
         </body>
     </file>

@@ -4,13 +4,13 @@ defined('TYPO3') or die();
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $tempColumns = [
-    'autocomplete' => [
+    'autocomplete'    => [
         'exclude' => 0,
         'label'   => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete',
         'config'  => [
-            'type' => 'select',
+            'type'       => 'select',
             'renderType' => 'selectSingle',
-            'items' => [
+            'items'      => [
                 [
                     'label' => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:autocomplete.none',
                     'value' => 'none'
@@ -106,19 +106,76 @@ $tempColumns = [
             ]
         ]
     ],
-    "items_per_row" => [
-        "exclude" => 0,
-        "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:itemsPerRow',
+    "items_per_row"   => [
+        "exclude"     => 0,
+        "label"       => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:itemsPerRow',
         "description" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:itemsPerRow.description',
-        "config" => [
-            "type" => 'select',
+        "config"      => [
+            "type"       => 'select',
             "renderType" => 'selectSingle',
-            "items" => [
-                ['--bitte auswählen--', ""],
-                ['2', "col-12 col-sm-6"],
-                ['3', "col-12 col-sm-4"],
-                ['4', "col-12 col-sm-3"],
-                ['6', "col-12 col-sm-2"],
+            "items"      => [
+                [
+                    "label" => "LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:select.empty",
+                    "value" => ""
+                ],
+                [
+                    "label" => '2 xl',
+                    "value" => "col-12 col-sm-6"
+                ],
+                [
+                    "label" => '2 sm',
+                    "value" => "col-12 col-sm-5"
+                ],
+                [
+                    "label" => '3',
+                    "value" => "col-12 col-sm-4"
+                ],
+                [
+                    "label" => '4',
+                    "value" => "col-12 col-sm-3"
+                ],
+                [
+                    "label" => '6',
+                    "value" => "col-12 col-sm-2"
+                ],
+            ],
+        ]
+    ],
+    "justify_content" => [
+        "exclude" => 0,
+        "label"   => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content',
+        "config"  => [
+            "type"       => 'select',
+            "renderType" => 'selectSingle',
+            "items"      => [
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:select.empty',
+                    "value" => ""
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.left',
+                    "value" => "justify-content-start"
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.center',
+                    "value" => "justify-content-center"
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.right',
+                    "value" => "justify-content-end"
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.space-between',
+                    "value" => "justify-content-between"
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.space-around',
+                    "value" => "justify-content-around"
+                ],
+                [
+                    "label" => 'LLL:EXT:gugler_powermail/Resources/Private/Language/locallang_db.xlf:justify_content.space-evenly',
+                    "value" => "justify-content-evenly"
+                ],
             ],
         ]
     ]
@@ -133,7 +190,7 @@ ExtensionManagementUtility::addToAllTCAtypes(
 );
 
 $GLOBALS['TCA']['tx_powermail_domain_model_field']['palettes']["inlineOptions"] = [
-    'showitem' => 'items_per_row'
+    'showitem' => 'items_per_row,justify_content'
 ];
 $showItemCheck = $GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['check']['showitem'];
 $showItemRadio = $GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['radio']['showitem'];

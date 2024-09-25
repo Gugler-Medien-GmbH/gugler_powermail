@@ -9,6 +9,7 @@ class Field extends \In2code\Powermail\Domain\Model\Field
 {
     protected string $autocomplete;
     protected string $itemsPerRow;
+    protected string $justifyContent;
 
     /**
      * @param string $autocomplete
@@ -36,6 +37,16 @@ class Field extends \In2code\Powermail\Domain\Model\Field
     public function setItemsPerRow(string $itemsPerRow): void
     {
         $this->itemsPerRow = $itemsPerRow;
+    }
+
+    public function getJustifyContent(): string
+    {
+        return $this->justifyContent;
+    }
+
+    public function setJustifyContent(string $justifyContent): void
+    {
+        $this->justifyContent = $justifyContent;
     }
 
 }

@@ -19,7 +19,7 @@
 
 <f:section name="checkbox">
     <f:for each="{field.modifiedSettings}" as="setting" iteration="index">
-        <div class="form-check {field.itemsPerRow} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
+        <div class="form-check {field.itemsPerRow} {field.justifyContent} {vh:validation.errorClass(field:field, class:'powermail_field_error')}">
             <f:form.checkbox
                     property="{field.marker}."
                     value="{setting.value}"
