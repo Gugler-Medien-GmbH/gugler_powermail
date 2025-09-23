@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages">
+		<header>
+			<authorName>Gugler Webdevs</authorName>
+			<authorEmail>webdeveloper@gugler.at</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="captcha.number.1" xml:space="preserve">
+				<target>Eins</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.2" xml:space="preserve">
+				<target>Zwei</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.3" xml:space="preserve">
+				<target>Drei</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.4" xml:space="preserve">
+				<target>Vier</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.5" xml:space="preserve">
+				<target>Fünf</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.6" xml:space="preserve">
+				<target>Sechs</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.7" xml:space="preserve">
+				<target>Sieben</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.8" xml:space="preserve">
+				<target>Acht</target>
+			</trans-unit>
+			<trans-unit id="captcha.number.9" xml:space="preserve">
+				<target>Neun</target>
+			</trans-unit>
+			<trans-unit id="captcha.operator.plus" xml:space="preserve">
+				<target>plus</target>
+			</trans-unit>
+			<trans-unit id="captcha.operator.mal" xml:space="preserve">
+				<target>mal</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
