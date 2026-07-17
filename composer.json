@@ -16,8 +16,8 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^12.4 || ^13.4",
-    "in2code/powermail": "^12.4 || ^13.0 || dev-master"
+    "typo3/cms-core": "^14.3",
+    "in2code/powermail": "^14.0"
   },
   "autoload": {
     "psr-4": {

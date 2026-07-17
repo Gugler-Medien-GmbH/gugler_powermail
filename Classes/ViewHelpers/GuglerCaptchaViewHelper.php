@@ -29,13 +29,13 @@ class GuglerCaptchaViewHelper extends AbstractTagBasedViewHelper {
       "9" => "Neun",
     );
 
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         $this->registerArgument('field', Field::class, 'powermail field', true);
         parent::initializeArguments();
     }
 
-    public function render()
+    public function render(): string
     {
         $field = $this->arguments['field'];
 

@@ -6,10 +6,10 @@ $EM_CONF[$_EXTKEY] = [
   "author" => "gugler* MarkenSinn",
   "author_email" => "webdeveloper@gugler.at",
   "state" => "alpha",
-  "version" => "3.2.0",
+  "version" => "4.0.0",
   "constraints" => [
     "depends" => [
-      "typo3" => "12.4.0-13.4.99",
+      "typo3" => "14.0.0-14.99.99",
       "powermail" => "*",
     ],
     "conflicts" => [],
