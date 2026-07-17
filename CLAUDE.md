@@ -36,9 +36,11 @@ Statisches TypoScript-Template **"gugler* powermail a11y improvements"** muss im
 
 ## Abhängigkeiten
 
-Aktuell (`main`, 3.x-Linie, `ext_emconf.php` Version 3.2.0):
-- `typo3/cms-core`: `^12.4 || ^13.4`
-- `in2code/powermail`: `^12.4 || ^13.0 || dev-master`
+Aktuell (`main`, 4.x-Linie, `ext_emconf.php` Version 4.0.0):
+- `typo3/cms-core`: `^14.3`
+- `in2code/powermail`: `^14.0` (Early Access — powermail hat zum Zeitpunkt dieses Updates noch keinen öffentlichen TYPO3-14-Release, siehe in2code-de/powermail#1336)
+
+TYPO3 14 / Fluid 5 verlangt explizite Return-Types in ViewHelpern (`initializeArguments(): void`, `render(): <Type>`) — in `GuglerCaptchaViewHelper` bereits umgesetzt. Die überschriebenen Fluid-Partials (`Input.html`, `Captcha.html`) und die TCA-`showitem`-str_replace-Hacks in `tx_powermail_domain_model_field.php` sind 1:1 aus einer älteren powermail-Version kopiert/gepatcht — bei Powermail-14-Vendor-Update gegen die dortigen Original-Partials/TCA gegenprüfen, da hier nichts automatisiert validiert wurde (kein lokaler Vendor-Zugriff beim Update auf 4.0.0).
 
 ## Versionshistorie
 
@@ -48,9 +50,10 @@ Mehrere parallele Branches/Major-Linien für unterschiedliche TYPO3-Versionen �
 |---|---|---|---|
 | 1.x (Branch `TYPO3-11`) | 1.0.0 – 1.0.2 | `^11.5 \|\| ^12.4` | nur ext_emconf `"*"`, kein Composer-Requirement |
 | 2.x | 2.0.0 – 2.0.2 | `^12.4` | `^12.4` (Composer-Requirement) |
-| 3.x (`main`) | 3.0.0 – 3.2.0 | `^12.4 \|\| ^13.4` | `^12.4 \|\| ^13.0 \|\| dev-master` |
+| 3.x (Branch `TYPO3-13`) | 3.0.0 – 3.2.1 | `^12.4 \|\| ^13.4` | `^12.4 \|\| ^13.0 \|\| dev-master` |
+| 4.x (`main`) | ab 4.0.0 | `^14.3` | `^14.0` (Early Access) |
 
-Hinweis: 2.x wird als Backport-Zweig parallel zu 3.x gepflegt (2.0.2 chronologisch nach den 3.x-Tags released).
+Hinweis: 2.x wird als Backport-Zweig parallel zu 3.x gepflegt (2.0.2 chronologisch nach den 3.x-Tags released). Der TYPO3-12/13-kompatible Stand (3.x) ist als Branch `TYPO3-13` eingefroren.
 
 ## Verwandte Extensions
 
