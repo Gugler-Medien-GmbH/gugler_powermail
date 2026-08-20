@@ -1,0 +1,17 @@
+plugin.tx_powermail {
+  view {
+    partialRootPaths {
+      10 = EXT:gugler_powermail/Resources/Private/Partials/
+    }
+  }
+  settings.setup.spamshield.methods {
+    # captcha.eu spam check (Classes/Domain/Validator/SpamShield/CaptchaEuMethod.php)
+    20 {
+      _enable = 1
+      name = Captcha.eu
+      class = Gugler\GuglerPowermail\Domain\Validator\SpamShield\CaptchaEuMethod
+      # if this check fails, add this indication value to the indicator (0 disables this check completely)
+      indication = 100
+    }
+  }
+}

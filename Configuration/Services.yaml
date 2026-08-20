@@ -7,5 +7,14 @@ services:
   Gugler\GuglerPowermail\:
     resource: "../Classes/*"
 
+  # Fetched via GeneralUtility::makeInstance() from CaptchaEuFieldViewHelper and
+  # CaptchaEuMethod (Fluid ViewHelpers and powermail SpamShield methods aren't
+  # constructor-injected), not from anywhere else via constructor injection -
+  # without "public: true" the container compiler drops it as unused and
+  # makeInstance() falls back to a plain `new` (bypassing autowiring, so
+  # RequestFactory never gets injected: "Too few arguments... exactly 1 expected").
+  Gugler\GuglerPowermail\Captcha\CaptchaEuService:
+    public: true
+
   In2code\Powermail\Domain\Model\Field::class:
     class: Gugler\GuglerPowermail\Domain\Model\Field::class
