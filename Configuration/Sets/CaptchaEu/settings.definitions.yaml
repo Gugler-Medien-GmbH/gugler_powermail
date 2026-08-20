@@ -1,0 +1,39 @@
+categories:
+  captchaeu:
+    label: 'captcha.eu'
+
+settings:
+  captchaeu.publicKey:
+    label: 'Public Key'
+    description: 'Go to www.captcha.eu/dashboard to get the keys.'
+    type: string
+    default: ''
+    category: captchaeu
+
+  captchaeu.restKey:
+    label: 'Rest Key'
+    description: 'Go to www.captcha.eu/dashboard to get the keys. Kept server-side only, never rendered into the page.'
+    type: string
+    default: ''
+    category: captchaeu
+
+  captchaeu.mode:
+    label: 'Widget mode'
+    description: 'How the captcha is displayed to users.'
+    type: string
+    default: invisible
+    enum:
+      invisible: 'Invisible - silent form interception (default)'
+      widget: 'Visible widget - shows a captcha widget on the form'
+    category: captchaeu
+
+  captchaeu.theme:
+    label: 'Widget theme'
+    description: 'Only used when "Widget mode" is set to "widget".'
+    type: string
+    default: auto
+    enum:
+      light: Light
+      dark: Dark
+      auto: Auto
+    category: captchaeu
