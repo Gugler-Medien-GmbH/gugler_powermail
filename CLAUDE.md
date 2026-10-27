@@ -39,6 +39,9 @@ Ersetzt die extern gepflegte, nicht TYPO3-14-fähige `captcha-eu/typo3-powermail
   - `CaptchaEuService` liest über `$GLOBALS['TYPO3_REQUEST']->getAttribute('site')->getSettings()->get('captchaeu.publicKey', '')` — funktioniert bereits ab der Site-Auflösung (sehr früh in der Middleware-Kette), robuster als ein Zugriff auf das volle geparste TypoScript-Setup.
   - **Reverse-Engineering-Hinweis:** captcha.eu liefert keine öffentliche API-Doku für `sdk.js` — das SDK-Verhalten oben wurde aus dem minifizierten Skript (`https://www.captcha.eu/sdk.js`) extrahiert. Bei SDK-Updates gegenprüfen, ob sich `interceptForm`/`getSolution`/`WidgetV2.autoInit` geändert haben.
 
+### Validator-Null-Guard (seit 4.1.1)
+powermail 14 führt `InputValidator`, `PasswordValidator` und `SpamShieldValidator` aus, bevor `FormController::isMailParamEmpty()` auf das Formular zurückleitet — alle drei greifen ungeprüft auf `$mail` zu. Ein Request ohne `mail`-Argument (GET auf create/confirmation, z.B. nach 301-Redirect non-www → www, oder POST-Body von PHP verworfen wegen `post_max_size`) endete in `Call to a member function getForm() on null` (500). XCLASSes in `Classes/Xclass/Validator/` (registriert in `ext_localconf.php`) liefern bei Nicht-`Mail` ein leeres `Result`; powermail leitet danach selbst aufs Formular. Bei powermail-Updates prüfen, ob upstream gefixt — dann XCLASSes entfernen.
+
 ## Einbindung
 
 Partial-Root-Path-Override in `Configuration/TypoScript/setup.typoscript`:
