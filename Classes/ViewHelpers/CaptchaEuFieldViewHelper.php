@@ -46,7 +46,9 @@ class CaptchaEuFieldViewHelper extends AbstractViewHelper
         }
 
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->addJsFooterFile('https://www.captcha.eu/sdk.js');
+        // External file: must be excluded from config.concatenateJs/compressJs, otherwise
+        // the ResourceCompressor silently drops it from the merged file (KROT undefined).
+        $pageRenderer->addJsFooterFile('https://www.captcha.eu/sdk.js', compress: false, excludeFromConcatenation: true);
 
         $publicKey = htmlspecialchars($service->getPublicKey(), ENT_QUOTES);
 
