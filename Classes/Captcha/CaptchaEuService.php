@@ -90,8 +90,20 @@ class CaptchaEuService
         return (bool)($result->success ?? false);
     }
 
+    /**
+     * captcha.eu keys are bound to a domain, so the live keys from the Site Settings
+     * don't work on a local/dev domain. A non-empty value in
+     * $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['gugler_powermail']['captchaeu'][<publicKey|restKey|mode|theme>]
+     * (e.g. set in config/system/additional.php for the DDEV context only) wins
+     * over the Site Setting for every site.
+     */
     private function getSetting(string $identifier, string $default): mixed
     {
+        $override = $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['gugler_powermail']['captchaeu'][substr($identifier, strlen('captchaeu.'))] ?? '';
+        if ($override !== '') {
+            return $override;
+        }
+
         $request = $GLOBALS['TYPO3_REQUEST'] ?? null;
         if (!$request instanceof ServerRequestInterface) {
             return $default;
